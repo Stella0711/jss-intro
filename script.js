@@ -38,9 +38,22 @@
 // Call the function
 // welcomePersonToFES(`David`, `Bragg`);
 
-function celsiusToFahrenheit (celsius, fahrenheit)
+// FIRST OPTION -------------
+
+// function celsiusToFahrenheit (celsius) {
+    // return celsius * 1.8 + 32;
+// }
+
+// console.log(celsiusToFahrenheit(0))
+// console.log(celsiusToFahrenheit(10))
+// console.log(celsiusToFahrenheit(30))
+
+// SECOND OPTION ------------
+
+const celsiusToFahrenheit = (celsius) => {
     return celsius * 1.8 + 32
+}
 
-console.log(celsiusToFahrenheit(celsius, fahrenheit))
-
-    
+console.log(celsiusToFahrenheit(0))
+console.log(celsiusToFahrenheit(10))
+console.log(celsiusToFahrenheit(30))
