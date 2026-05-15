@@ -93,6 +93,15 @@
 
 // let grades = ['A+', 'A', 'FAIL']
 
+// let goodGrades = grades.filter((element) => {
+    // console.log(element)
+    // if (element !== `FAIL`) {
+        // return true;
+    // }
+// })
+
+// console.log(goodGrades)
+
 // let goodGrades = grades.filter(element => element !== 'FAIL')
 
 // console.log(goodGrades)
@@ -113,9 +122,66 @@
 
 // --- EXAMPLE of *MAP* ARRAY METHOD ---
 
+/**
+ * let dollars = [1 ,5 ,10, 3];
+
+// --long method--
+
+// let cents = dollars.map(element => {
+    // console.log(element)
+    // return element * 100
+// })
+
+// console.log(cents)
+
+// --short method--
+
+// let cents = dollars.map(element => element * 100)
+
+//  consol.log(cents)
+
+//  --without using map method--
 let dollars = [1 ,5 ,10, 3];
+// step 1: create new `cents` array
+let cents = [];
 
-let cents = dollars.map(element => element * 100)
+// step 2: loop over every element in `dollars`
+    // multiply the element by 100
+    // add this element onto `cents` array
+for (let i = 0; i < dollars.length; ++i) {
+    cents.push(dollars[i] * 100);
+}
+// step 3: console log cents
+console.log(cents);
+*/
 
-console.log(cents)
+/**
+ * Create a register function that accepts:
+ * - username
+ * - email
+ * - password
+ * - subscriptionStatus
+ * - discordId
+ * - lessonsCompleted
+ * 
+ * Inside your register function:
+ * 1. Create a user object
+ * 2. Push this user object onto the `users` array
+ * 
+ * 
+ */
 
+function register(user){
+    users.push(user);
+}
+
+register({
+    username: `tanner`, 
+    email: `tanner@gmail.com`, 
+    password: `test123`,
+    subscriptionStatus: `VIP`,
+    discordId: `tanner001`,
+    lessonsCompleted: [0, 1]
+});
+
+console.log(user);
