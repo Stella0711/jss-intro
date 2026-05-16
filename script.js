@@ -184,8 +184,6 @@ console.log(cents);
     // lessonsCompleted: [0, 1]
 // });
 
-console.log()
-
 // console.log(user);
 
 // --------- DOM -----------------
@@ -202,8 +200,42 @@ console.log()
 // ***Best practice for accessing element with ID
 console.log(document.getElementById('title'))
 
-// ***CHANGE HTML****/
+// ***CHANGE HTML***/
 
-document.querySelector(".title").innerHTML += "Frontend Simplified"
+// document.querySelector(".title").innerHTML += "Frontend Simplified"
+// ^^ this will change the title with =
+// ^^ this will add to the title with +=
+
+// ***CHANGE CSS***/
+// document.querySelector(".title").style.fontSize = '100px'
+// ^^ this will change the title with any property you type
+
+// ----EXAMPLE of CSS CHANGE USING FUNCTION-----
+// function changeTitleToRed() {
+    // document.querySelector(".title").style.color = 'red'
+    // console.log('clicked');
+// }
+
+// ---TOGGLE DARK MODE--- minute 11 in DOM video-----
+
+// function toggleDarkMode() {
+    // document.querySelector('body').classList.toggle("dark-theme")
+// }
+
+// ------------***PROMISES***-------------------
+
+// fetch("https://jsonplaceholder.typicode.com/users/1")
+
+// 1. Then
+
+fetch("https://jsonplaceholder.typicode.com/users/1").then(response => {
+    response.json().then(data => {
+        console.log(data)
+    })
+})
+
+// 2. Async/Await
+
+
 
 
