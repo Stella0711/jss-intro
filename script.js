@@ -171,17 +171,39 @@ console.log(cents);
  * 
  */
 
-function register(user){
-    users.push(user);
-}
+// function register(user){
+    // users.push(user);
+// }
 
-register({
-    username: `tanner`, 
-    email: `tanner@gmail.com`, 
-    password: `test123`,
-    subscriptionStatus: `VIP`,
-    discordId: `tanner001`,
-    lessonsCompleted: [0, 1]
-});
+// register({
+    // username: `tanner`, 
+    // email: `tanner@gmail.com`, 
+    // password: `test123`,
+    // subscriptionStatus: `VIP`,
+    // discordId: `tanner001`,
+    // lessonsCompleted: [0, 1]
+// });
 
-console.log(user);
+console.log()
+
+// console.log(user);
+
+// --------- DOM -----------------
+// ------ *add /defer/ to jss line in html header*-------------
+// 
+
+// First way of accessing an element
+// ***Best if the element you are accessing does not have an ID
+// console.log(document.querySelector('.title'));
+// ^^ most commonly used ^^ similar to css
+/* use a dot to access a class; use a hash to access an ID
+
+// Second way of accessing an element
+// ***Best practice for accessing element with ID
+console.log(document.getElementById('title'))
+
+// ***CHANGE HTML****/
+
+document.querySelector(".title").innerHTML += "Frontend Simplified"
+
+
